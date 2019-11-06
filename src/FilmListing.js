@@ -11,7 +11,7 @@ class FilmListing extends Component {
         };
     }
     handleFilterClick = (filter) => {
-        console.log('Setting filter to ' + filter);
+        
         this.setState({
             filter: filter,
         });
