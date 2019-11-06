@@ -18,7 +18,7 @@ class FilmListing extends Component {
     }
 
     render() {
-        // console.log(this.props.faves.includes(this.props.films[0]), this.props.films)
+        
         const allFilms = this.props.films.map((film, index) => {
             return (
                 <FilmRow handleDetailsClick={() => this.props.handleDetailsClick(film)} isFave={(this.props.faves.includes(film) <= 0) ? false : true} onFaveToggle={() => this.props.onFaveToggle(film)} title={film.name} poster_path={film.image[3]["#text"]} key={index} year={film.artist.name} />
@@ -27,13 +27,13 @@ class FilmListing extends Component {
         })
         const allFaves = this.props.faves.map((film, index) => {
             return (
-                <FilmRow handleDetailsClick={() => this.props.handleDetailsClick(film.title)} isFave={(this.props.faves.includes(film) <= 0) ? false : true} onFaveToggle={() =>this.props.onFaveToggle(film)} title={film.name} poster_path={film.image[3]["#text"]} key={index} year={film.artist.name} />
+                <FilmRow handleDetailsClick={() => this.props.handleDetailsClick(film)} isFave={(this.props.faves.includes(film) <= 0) ? false : true} onFaveToggle={() =>this.props.onFaveToggle(film)} title={film.name} poster_path={film.image[3]["#text"]} key={index} year={film.artist.name} />
 
             )
         })
         return (
             <div className="film-list">
-                <h1 className="section-title">FILMS</h1>
+                <h1 className="section-title">SONGS</h1>
                 <div className="film-list-filters">
                     <div className={"film-list-filter " + (this.state.filter === "all" ? "is-active" : "")} onClick={() => this.handleFilterClick('all')}>
                         ALL
