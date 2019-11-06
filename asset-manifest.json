@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/music-list/static/css/main.1c98973d.chunk.css",
+    "main.js": "/music-list/static/js/main.40e59b66.chunk.js",
+    "main.js.map": "/music-list/static/js/main.40e59b66.chunk.js.map",
+    "runtime-main.js": "/music-list/static/js/runtime-main.d8458c5e.js",
+    "runtime-main.js.map": "/music-list/static/js/runtime-main.d8458c5e.js.map",
+    "static/js/2.b40305e6.chunk.js": "/music-list/static/js/2.b40305e6.chunk.js",
+    "static/js/2.b40305e6.chunk.js.map": "/music-list/static/js/2.b40305e6.chunk.js.map",
+    "index.html": "/music-list/index.html",
+    "precache-manifest.4ae8b3622d44e77c8763712c67c2b0ba.js": "/music-list/precache-manifest.4ae8b3622d44e77c8763712c67c2b0ba.js",
+    "service-worker.js": "/music-list/service-worker.js",
+    "static/css/main.1c98973d.chunk.css.map": "/music-list/static/css/main.1c98973d.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8458c5e.js",
+    "static/js/2.b40305e6.chunk.js",
+    "static/css/main.1c98973d.chunk.css",
+    "static/js/main.40e59b66.chunk.js"
+  ]
+}
