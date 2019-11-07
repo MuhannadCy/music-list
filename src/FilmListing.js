@@ -32,6 +32,7 @@ class FilmListing extends Component {
             )
         })
         return (
+        
             <div className="film-list">
                 <h1 className="section-title">SONGS</h1>
                 <div className="film-list-filters">
@@ -43,7 +44,8 @@ class FilmListing extends Component {
                         FAVES
             <span className="section-count">{this.props.faves.length}</span>
                     </div>
-                </div>
+                    </div>
+                
 
                 {(this.state.filter === 'all') ? allFilms : allFaves}
             </div>

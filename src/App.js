@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import FilmDetails from './FilmDetails.js';
 import FilmListing from './FilmListing.js';
-import TMDB from './TMDB.js';
 import axios from "axios";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      films: TMDB.films,
       faves: [],
       current: {},
       similar: [],
