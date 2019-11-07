@@ -9,3 +9,7 @@
 3- As a user I would like to listen to the song
 
 4- As a user I would like to add and remove songs from favorite. 
+
+## Future Plans
+
+  Add a search functionality. 
