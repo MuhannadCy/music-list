@@ -3,16 +3,16 @@ import React from 'react'
 const FilmDetails = props => {
     const backdropUrl = ``
     const posterUrl = ``
-    let allSimilar = "This song is perfect to have any similar songs"
+    let allSimilar = "This song is too perfect to have any similar songs"
     if(props.similar.length){
         allSimilar = props.similar.map((song)=>{
-            return(<div><a href= {song.url}>{song.name} by {song.artist.name}</a></div>)
+            return(<div><a href= {song.url} target={"_blank"}>{song.name} by {song.artist.name}</a></div>)
         })
     }
     let details = (<div className="film-detail">
         <p>
             <i className="material-icons">subscriptions</i>
-            <span>No film selected</span>
+            <span>No song selected</span>
         </p>
     </div>)
 
@@ -31,21 +31,6 @@ const FilmDetails = props => {
                         <img src={posterUrl} className="film-detail-poster" alt={props.film.artist.name} />
                         <a href = {props.film.url} target={"_blank"}>Listen to the song</a>
                         <h3>Similar Songs</h3>
-                        {/* <div>
-                        <a href= {props.similar[0].url}>{props.similar[0].name} by {props.similar[0].artist.name}</a>
-                        </div>
-                        <div>
-                        <a href= {props.similar[1].url}>{props.similar[1].name} by {props.similar[1].artist.name}</a>
-                        </div>
-                        <div>
-                        <a href= {props.similar[2].url}>{props.similar[2].name} by {props.similar[2].artist.name}</a>
-                        </div>
-                        <div>
-                        <a href= {props.similar[3].url}>{props.similar[3].name} by {props.similar[3].artist.name}</a>
-                        </div>
-                        <div>
-                        <a href= {props.similar[4].url}>{props.similar[4].name} by {props.similar[4].artist.name}</a>
-                        </div> */}
                         {allSimilar}
                     </p>
                 </div>

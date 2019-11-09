@@ -32,6 +32,7 @@ figure {
   height: 100%;
   align-items: stretch;
   justify-content: space-around;
+  
 }
 
 .film-list {
@@ -50,7 +51,7 @@ figure {
 
 .film-details {
   flex: 0 1 66.666666%;
-  background-color: #f0f0f0;
+  background-color: lightgreen;
 }
 
 .film-row {
@@ -79,7 +80,7 @@ figure {
 }
 
 .film-row-fave.remove_from_queue {
-  background-color: rgba(32, 178, 170, 0.75);
+  background-color: lightslategray
 }
 
 .film-poster {
@@ -106,7 +107,7 @@ figure {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: #777;
+  background-color:black;
   color: white;
   text-align: center;
   font-size: 0.75em;
@@ -141,11 +142,11 @@ figure {
 }
 
 .film-list-filter:hover {
-  background-color: hsl(177, 70%, 46%);
+  background-color: lightsteelblue
 }
 
 .film-list-filter.is-active {
-  background-color: lightseagreen;
+  background-color: lightsalmon;
 }
 
 .section-count {
@@ -223,5 +224,5 @@ figure {
   padding: 1em 1.5em;
   line-height: 1.45;
   color: white;
-  background-color: lightseagreen;
+  background-color: lightgreen;
 }
